@@ -1,5 +1,6 @@
 import "bootstrap/dist/css/bootstrap.css";
-import "./App.css";
+import "./style/style.css";
+import Weather from "./components/Weather";
 import Footer from "./components/Footer";
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
       <div className="container">
         <h1>Weather app</h1>
+        <Weather />
         <Footer />
         <button className="btn btn-primary">Primary</button>
       </div>
