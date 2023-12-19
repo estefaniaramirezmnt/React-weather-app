@@ -1,8 +1,9 @@
 import React from "react";
+import "../style/Footer.css";
 
 function Footer() {
     return (
-    <div>
+    <div className="footer">
         <p>
             This project was created by 
             <a href="https://niaramirez-portfolio.netlify.app/" target="_blank" rel="noreferrer"> Nia Ramírez </a>

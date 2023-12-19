@@ -1,0 +1,67 @@
+.weather {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid #dadde1;
+  color: white;
+  padding: 30px 0;
+}
+
+.form-search {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content:center;
+  margin: 20px auto;
+}
+
+.form-search > div {
+  margin: 20px;
+}
+
+/* .form-input,
+.form-button {
+} */
+
+.city-date-time {
+  /* border: 2px solid green; */
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.city-date-time h1 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.city-date-time h2 {
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.weather-conditions {
+  /* border: 2px solid blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.list-date {
+  list-style-type: none;
+  margin: 10px;
+  padding: 0;
+}
+
+.list-weather-conditions {
+  list-style-type: none;
+  margin: 20px;
+  padding: 0;
+}
+
+img {
+  width: 60px;
+}
+
