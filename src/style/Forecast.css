@@ -1,16 +1,19 @@
 .days-container {
-    border: 1px solid green;
+    background-color: rgba(255, 255, 255, 0.3);
+    /* border: 1px solid green; */
+    border-radius: 15px;
     display: flex;
     justify-content: space-around;
-    margin: 20px auto;
+    margin: 0px auto;
     margin-top: 20px;
-    padding: 30px 0;
+    padding: 20px;
+    width: 95%;
 }
 
 
 .day {
-    border: 1px solid red;
-    padding: 20px;
+    /* border: 1px solid red; */
+    text-align: center;
 }
 
 @media (max-width: 600px) {
