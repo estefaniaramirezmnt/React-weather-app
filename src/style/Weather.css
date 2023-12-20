@@ -8,19 +8,35 @@
 } */
 
 .form-search {
-  /* border: 2px solid red; */
-  display: flex;
-  justify-content:center;
-  margin: 20px auto;
-}
-
-.form-search > div {
+  border: 2px solid red;
   margin: 20px;
 }
 
-/* .form-input,
-.form-button {
+/* .form-search > div {
+  border: 2px solid blue;
+  margin: 20px;
 } */
+
+.form-input {
+  border: 2px solid blue;
+  border-radius: 15px;
+
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin: 20px;
+  padding: 15px;
+  width: 500px;
+} 
+
+.form-button {
+  border-radius: 15px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin: 20px;
+  border: 2px solid blue;
+  padding: 15px;
+  width: 150px;
+}
 
 .city-date-time {
   /* border: 2px solid green; */

@@ -5,16 +5,16 @@ function Weather() {
   return (
     <div className="weather">
       <form className="form-search">
-        <div>
+        {/* <div> */}
           <input
             type="search"
             placeholder="Enter a city"
             className="form-input"
           />
-        </div>
-        <div>
-          <input type="submit" value="Search" className="form-submit" />
-        </div>
+        {/* </div> */}
+        {/* <div> */}
+          <input type="submit" value="Search" className="form-button"/>
+        {/* </div> */}
       </form>
       <div className="city-date-time">
         <h1>Madrid</h1>
