@@ -26,6 +26,8 @@
 
 .icon {
     margin: 10px 0px;
+  width: 60px;
+
 }
 
 @media (max-width: 600px) {
@@ -35,7 +37,7 @@
 
     .days-container {
         padding: 10px 5px;    
-        width: 70%;
+        width: 80%;
     }
 
     .day {

@@ -27,9 +27,9 @@ function Weather() {
           alt="cloudy"
         />
         <ul className="list-weather-conditions">
-          <li>Precipitation: 15%</li>
-          <li>Humidity: 72%</li>
-          <li>Wind: 13 km/h</li>
+          <li><span>Precipitation:</span> 15%</li>
+          <li><span>Humidity:</span> 72%</li>
+          <li><span>Wind:</span> 13 km/h</li>
         </ul>
       </div>
     </div>
