@@ -28,13 +28,13 @@
 }
 
 .city-date-time h1 {
-  font-size: 1rem;
+  font-size: 1.4rem;
   margin: 0;
   margin-top: 10px;
 }
 
 .city-date-time h2 {
-  font-size: 2.7rem;
+  font-size: 3.2rem;
   font-weight: 500;
   margin: 0;
 }
@@ -49,21 +49,26 @@
 
 .weather-conditions {
   /* border: 2px solid blue; */
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 10px auto;
   padding: 10px;
-  margin: 10px;
+  text-align: center;
+  width: 95%;
 }
 
 img {
-  width: 80px;
+  margin: 30px;
+  width: 110px;
 }
 
 .list-weather-conditions {
   /* border: 1px solid orange; */
   list-style-type: none;
-  margin: 20px;
+  margin: 30px;
   padding: 0;
 }
 
@@ -77,12 +82,23 @@ img {
   }
 
   .city-date-time h1 {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
 
   .city-date-time h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+  }
+
+  .weather-conditions {
+    width: 80%;
+  }
+
+  img {
+    width: 100px;
+  }
   
+  .list-weather-conditions, img {
+    margin: 10px;
   }
 
   .list-date li, .weather-conditions li {
