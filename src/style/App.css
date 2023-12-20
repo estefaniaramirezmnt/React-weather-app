@@ -1,11 +1,12 @@
 body {
-  font-family: 'Quicksand', sans-serif;}
+  font-family: 'Quicksand', sans-serif;
+}
 
 .App {
   display: block;
   margin: 40px auto;
   text-align: center;
-  max-width: 50%;
+  max-width: 30%;
 }
 
 .app-container {
@@ -17,15 +18,80 @@ body {
   padding: 30px 0;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 2150px) {
+  .App {
+    max-width: 35%;
+  }
+}
+
+@media (max-width: 1850px) {
+  .App {
+    max-width: 40%;
+  }
+}
+
+@media (max-width: 1650px) {
+  .App {
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 1500px) {
+  .App {
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 1350px) {
+  .App {
+    max-width: 55%;
+  }
+}
+
+@media (max-width: 1280px) {
+  .App {
+    max-width: 60%;
+  }
+}
+
+@media (max-width: 1050px) {
+  .App {
+    max-width: 65%;
+  }
+}
+
+@media (max-width: 950px) {
   .App {
     max-width: 70%;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .App {
-    max-width: 100%;
+    max-width: 75%;
   }
 }
 
+@media (max-width: 850px) {
+  .App {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 770px) {
+  .App {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 700px) {
+  .App {
+    max-width: 95%;
+  }
+}
+
+/* @media (max-width: 600px) {
+  .App {
+    max-width: 100%;
+  }
+} */

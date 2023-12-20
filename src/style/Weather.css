@@ -81,3 +81,16 @@ img {
   width: 60px;
 }
 
+@media (min-width: 2300px) {
+  .form-input {
+    margin: 20px;
+    padding: 15px;
+    width: 300px;
+  } 
+  
+  .form-button {
+    margin: 20px;
+    padding: 15px;
+    width: 120px;
+  }
+}
