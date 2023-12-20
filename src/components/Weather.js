@@ -10,8 +10,10 @@ function Weather() {
           placeholder="Enter a city"
           className="form-input"
         />
-
-        <input type="submit" value="Search" className="form-button" />
+        <input 
+          type="submit" 
+          value="Search" 
+          className="form-button" />
       </form>
       <div className="city-date-time">
         <h1>Madrid</h1>
