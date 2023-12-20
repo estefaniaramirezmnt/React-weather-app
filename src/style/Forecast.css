@@ -1,23 +1,56 @@
 .days-container {
-    background-color: rgba(255, 255, 255, 0.3);
-    /* border: 1px solid green; */
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.4);
     border-radius: 15px;
     display: flex;
     justify-content: space-around;
-    margin: 0px auto;
-    margin-top: 20px;
-    padding: 20px;
+    margin: 30px auto;
+    padding: 30px 15px;
     width: 95%;
 }
 
 
 .day {
-    /* border: 1px solid red; */
     text-align: center;
+}
+
+.day h3 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.day p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.icon {
+    margin: 10px 0px;
 }
 
 @media (max-width: 600px) {
     .days-container {
         flex-direction: column;
+    }
+
+    .days-container {
+        padding: 10px 5px;    
+        width: 70%;
+    }
+
+    .day {
+        align-items: center;
+        display: grid;
+        grid-template-columns: 2fr 1fr 2fr;
+        margin: 0px;
+        padding: 0px
+    }
+
+    .day h3 {
+        font-size: 1rem;
+    }
+
+    .day p {
+        font-size: 0.8rem;
     }
 }
