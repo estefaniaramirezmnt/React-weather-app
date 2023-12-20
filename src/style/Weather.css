@@ -75,7 +75,7 @@
 
 .weather-conditions {
   /* border: 2px solid blue; */
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.3);
   border-radius: 15px;
   display: flex;
   justify-content: center;
