@@ -60,27 +60,38 @@
 
 .city-date-time h2 {
   color: rgb(175, 200, 173);
-  font-size: 3.5rem;
+  font-size: 3.8rem;
   font-weight: 400;
   margin: 0;
+  position: relative; /* Agrega posición relativa al contenedor */
+}
+
+h2 span {
+font-size: 1.2rem;
+position: absolute; 
+top: 50%; 
+transform: translateY(-100%);
+right: 10;
 }
 
 .list-date {
-  /* border: 1px solid orange; */
   list-style-type: none;
   margin-bottom: 10px;
   padding: 0;
   text-align: center;
 }
 
+.list-date li {
+text-transform: capitalize;
+}
+
 .weather-conditions {
-  /* border: 2px solid blue; */
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px auto;
+  margin: 30px auto;
   padding: 10px;
   text-align: center;
   width: 95%;
