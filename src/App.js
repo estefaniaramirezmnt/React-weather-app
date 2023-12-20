@@ -10,8 +10,6 @@ function App() {
       <div className="app-container">
         <Weather />
         <Forecast />
-      </div>
-      <div className="footer-container">
         <Footer />
       </div>
     </div>
