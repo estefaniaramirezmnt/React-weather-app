@@ -1,47 +1,30 @@
-/* .weather {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/3.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 1px solid #dadde1;
-  color: white;
-  padding: 30px 0;
-} */
-
 .form-search {
-  border: 2px solid red;
-  margin: 20px;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
 }
 
-/* .form-search > div {
-  border: 2px solid blue;
-  margin: 20px;
-} */
-
 .form-input {
-  border: 2px solid blue;
   border-radius: 15px;
-
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 500;
-  margin: 20px;
-  padding: 15px;
-  width: 500px;
-} 
+  margin: 10px;
+  padding: 10px 80px 10px 10px;
+}
 
 .form-button {
   border-radius: 15px;
-  font-size: 1.3rem;
-  font-weight: 500;
-  margin: 20px;
-  border: 2px solid blue;
-  padding: 15px;
-  width: 150px;
+  font-size: 1.2rem;
+  margin: 10px;
+  padding: 10px 25px;
 }
 
 .city-date-time {
-  /* border: 2px solid green; */
+  align-items: center;
+  /* border: 2px solid blueviolet; */
   display: flex;
   flex-direction: column;
+  justify-content: center;
   padding: 10px;
 }
 
@@ -66,9 +49,11 @@
 }
 
 .list-date {
+  /* border: 1px solid orange; */
   list-style-type: none;
   margin: 10px;
   padding: 0;
+  text-align: center;
 }
 
 .list-weather-conditions {
@@ -81,16 +66,26 @@ img {
   width: 60px;
 }
 
-@media (min-width: 2300px) {
+@media (max-width: 600px) {
   .form-input {
-    margin: 20px;
-    padding: 15px;
-    width: 300px;
-  } 
-  
+    font-size: 1rem;
+    padding: 10px 50px 10px 10px;
+  }
   .form-button {
-    margin: 20px;
-    padding: 15px;
-    width: 120px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .form-input {
+    font-size: 0.8rem;
+    margin: 5px;
+    padding: 10px;
+  }
+
+  .form-button {
+    font-size: 0.8rem;
+    margin: 5px;
+    padding: 10px;
   }
 }
