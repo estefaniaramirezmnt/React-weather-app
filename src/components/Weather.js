@@ -46,7 +46,8 @@ function Weather(props) {
         </div>
         <div className="weather-conditions">
           <img
-            src={`https://shecodes-assets.s3.amazonaws.com/api/weather/icons/${weatherData.icon}.png`} // o .svg dependiendo del formato            alt={weatherData.description}
+            src={`https://shecodes-assets.s3.amazonaws.com/api/weather/icons/${weatherData.icon}.png`}         
+            alt={weatherData.description}
           />
           <ul className="list-weather-conditions">
             <li>
