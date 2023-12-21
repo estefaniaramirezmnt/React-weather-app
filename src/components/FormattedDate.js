@@ -22,21 +22,6 @@ function FormattedDate(props) {
   }
 
   let currentDate = props.date.getDate();
-  //   let months = [
-  //     "Jan",
-  //     "Feb",
-  //     "Mar",
-  //     "Apr",
-  //     "May",
-  //     "Jun",
-  //     "Jul",
-  //     "Aug",
-  //     "Sep",
-  //     "Oct",
-  //     "Nov",
-  //     "Dec"
-  //   ];
-  //   let month = months[props.date.getMonth()];
   let month = props.date.toLocaleString("default", { month: "short" });
   let year = props.date.getFullYear();
 
