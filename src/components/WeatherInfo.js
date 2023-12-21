@@ -5,7 +5,7 @@ function WeatherInfo(props) {
   return (
     <div>
       <div className="city-date-time">
-        <h1>Madrid</h1>
+        <h1>{props.data.city}</h1>
         <h2>
           {props.data.temp}
           <span>ºC</span>
