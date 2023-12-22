@@ -9,7 +9,7 @@
   border: 1px solid rgb(175, 200, 173);
   border-radius: 15px;
   font-size: 1.2rem;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.05rem;
   margin: 1px;
   padding: 10px 80px 10px 15px;
@@ -29,7 +29,7 @@
   border-radius: 15px;
   color: rgb(33, 59, 44);
   font-size: 1.2rem;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.05rem;
   margin: 10px;
   padding: 10px 25px;
@@ -39,8 +39,8 @@
 .form-button:hover {
   background-color: rgb(136, 171, 142);
   border: 1px solid rgb(136, 171, 142);
+  color: rgb(238, 231, 218);
   cursor: pointer;
-  opacity: 0.8;
 }
 
 .city-date-time {
