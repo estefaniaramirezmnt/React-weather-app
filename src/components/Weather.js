@@ -6,11 +6,11 @@ import "../style/Weather.css";
 function Weather(props) {
   // const [ready, setReady] = useState(false);
   const [weatherData, setWeatherData] = useState({ ready: false });
+  const [icon, setIcon] = useState("");
   const [city, setCity] = useState(props.defaultCity);
   const [inputValue, setInputValue] = useState("");
 
   function handleResponse(response) {
-    console.log(response.data);
     setWeatherData({
       ready: true,
       temp: Math.round(response.data.temperature.current),
@@ -20,15 +20,20 @@ function Weather(props) {
       humidity: response.data.temperature.humidity,
       wind: response.data.wind.speed,
       city: response.data.city,
-      icon: response.data.condition.icon,
+      // icon: response.data.condition.icon,
     });
+    setIcon(response.data.condition.icon);
     // setReady(true);
   }
 
   function search() {
     const apiKey = "4efbbf43t600f8b07428238a0a4o0852";
     let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
-    axios.get(apiUrl).then(handleResponse);
+    axios.get(apiUrl)
+    .then(handleResponse)
+    // .catch((error) => {
+    //   alert(`Oops! An unexpected problem ocurred. Please try again later.`);
+    // });
   }
 
   function handleSubmit(event) {
@@ -57,7 +62,7 @@ function Weather(props) {
           />
           <input type="submit" value="Search" className="form-button" />
         </form>
-        <WeatherInfo data={weatherData} />
+        <WeatherInfo data={weatherData} icon={icon}/>
       </div>
     );
   } else {

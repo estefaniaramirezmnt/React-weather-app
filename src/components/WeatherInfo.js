@@ -1,5 +1,6 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
+import WeatherIcon from "./WeatherIcon";
 
 function WeatherInfo(props) {
   return (
@@ -18,10 +19,14 @@ function WeatherInfo(props) {
         </ul>
       </div>
       <div className="weather-conditions">
-        <img
+        <div>
+          <WeatherIcon icon={props.icon} alt={props.data.description} />
+        </div>
+        {/* <img
           src={`https://shecodes-assets.s3.amazonaws.com/api/weather/icons/${props.data.icon}.png`}
           alt={props.data.description}
-        />
+        /> */}
+        {/* <img src={WeatherIcon(props.icon)} alt={props.data.description} /> */}
         <ul className="list-weather-conditions">
           <li>
             <span>Feels like:</span> {props.data.feelsLike}ºC
