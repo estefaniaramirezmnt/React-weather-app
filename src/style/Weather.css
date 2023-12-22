@@ -92,14 +92,14 @@ text-transform: capitalize;
   justify-content: center;
   align-items: center;
   margin: 30px auto;
-  padding: 10px;
+  padding: 0px;
   text-align: center;
   width: 95%;
 }
 
 img {
-  margin: 30px;
-  width: 110px;
+  margin: 20px;
+  width: 150px;
 }
 
 .list-weather-conditions {

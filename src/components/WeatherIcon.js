@@ -1,4 +1,3 @@
-//shecodes
 import React from "react";
 
 function WeatherIcon(props) {
