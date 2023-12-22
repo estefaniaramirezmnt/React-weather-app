@@ -12,7 +12,7 @@
   font-weight: 700;
   letter-spacing: 0.05rem;
   margin: 1px;
-  /* padding: 10px 80px 10px 15px; */
+  padding: 10px 80px 10px 15px;
 }
 
 ::placeholder {
@@ -29,10 +29,10 @@
   border-radius: 15px;
   color: rgb(33, 59, 44);
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.05rem;
   margin: 10px;
-  /* padding: 10px 25px; */
+  padding: 10px 25px;
   transition: all 0.3s ease-in-out;
 }
 
