@@ -19,8 +19,8 @@ function WeatherIcon(props) {
     "thunderstorm-night": "icons/thunderstorms-night.svg",
     "snow-day": "icons/snowflake.svg",
     "snow-night": "icons/snowflake.svg",
-    "mist-day": "icons/mist.svg",
-    "mist-night": "icons/mist.svg",
+    "mist-day": "icons/fog-day.svg",
+    "mist-night": "icons/fog-night.svg",
   };
 
   return (
