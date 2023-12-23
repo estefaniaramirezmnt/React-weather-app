@@ -128,7 +128,8 @@ li span {
     padding: 10px 50px 10px 10px;
   }
 
-  .form-button {
+  .form-button,
+  .temperature-container span {
     font-size: 1rem;
   }
 
@@ -137,39 +138,30 @@ li span {
   }
 
   .city-date-time h2 {
-    font-size: 3rem;
+    font-size: 3.2rem;
   }
 
-  .temperature-container span {
-    font-size: 1rem;
-  }
   .weather-conditions {
     width: 80%;
   }
 
-  img {
+  .weather-conditions img {
+    margin: 10px;
     width: 100px;
   }
 
-  .list-weather-conditions,
-  img {
+  .list-weather-conditions {
     margin: 10px;
   }
 
   .list-date li,
   .weather-conditions li {
     font-size: 0.8rem;
-
   }
 }
 
 @media (max-width: 550px) {
-  .form-input {
-    font-size: 0.8rem;
-    margin: 5px;
-    padding: 10px 15px;
-  }
-
+  .form-input,
   .form-button {
     font-size: 0.8rem;
     margin: 5px;
