@@ -20,9 +20,8 @@
     margin: 0;
 }
 
-.day-forecast p {
-    font-size: 1rem;
-    margin: 0;
+.forecast-temp-max {
+    font-weight: 700;
 }
 
 .forecast-days-container img {

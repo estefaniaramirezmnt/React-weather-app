@@ -27,16 +27,6 @@ function Weather(props) {
     // setReady(true);
   }
 
-  function search() {
-    let apiKey = "4efbbf43t600f8b07428238a0a4o0852";
-    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
-    axios.get(apiUrl)
-    .then(handleResponse)
-    // .catch((error) => {
-    //   alert(`Oops! An unexpected problem ocurred. Please try again later.`);
-    // });
-  }
-
   function handleSubmit(event) {
     event.preventDefault();
     search();
@@ -46,6 +36,16 @@ function Weather(props) {
   function handleCityChange(event) {
     setCity(event.target.value);
     setInputValue(event.target.value);
+  }
+
+  function search() {
+    let apiKey = "4efbbf43t600f8b07428238a0a4o0852";
+    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
+    axios.get(apiUrl)
+    .then(handleResponse)
+    // .catch((error) => {
+    //   alert(`Oops! An unexpected problem ocurred. Please try again later.`);
+    // });
   }
 
   if (weatherData.ready) {
@@ -64,7 +64,7 @@ function Weather(props) {
           <input type="submit" value="Search" className="form-button" />
         </form>
         <WeatherInfo data={weatherData} icon={icon} className="current-icon"/>
-        <Forecast city={weatherData.city} icon={icon}/>
+        <Forecast city={weatherData.city}/>
       </div>
     );
   } else {
