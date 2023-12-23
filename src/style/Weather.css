@@ -79,6 +79,10 @@
   color: rgb(238, 231, 218);
 }
 
+.temperature-container a:hover {
+  color: rgb(136, 171, 142)
+}
+
 .list-date {
   list-style-type: none;
   margin-bottom: 10px;
@@ -102,7 +106,7 @@
   width: 90%;
 }
 
-img {
+.weather-conditions img {
   margin: 20px;
   width: 150px;
 }

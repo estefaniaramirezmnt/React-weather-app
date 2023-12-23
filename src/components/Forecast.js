@@ -1,62 +1,29 @@
 import React from "react";
+import axios from "axios";
+import WeatherIcon from "./WeatherIcon";
 import "../style/Forecast.css";
 
-function Forecast() {
+function Forecast(props) {
+  function handleResponse(response) {
+  }
+
+  let apiKey = "4efbbf43t600f8b07428238a0a4o0852";
+  let city = props.city;
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(handleResponse);
+  // .catch((error) => {
+  //   alert(`Oops! An unexpected problem ocurred. Please try again later.`);
+  // });
+
   return (
-    <div className="days-container">
-      <div className="day day1">
+    <div className="forecast-days-container">
+      <div className="day-forecast">
         <h3>Wed</h3>
-        <img
-          src="https://cdn-icons-png.flaticon.com/512/5903/5903939.png"
-          alt="cloudy"
-          className="icon"
-        />
-        <p>6°C</p>
-      </div>
-      <div className="day day2">
-        <h3>Thu</h3>
-        <img
-          src="https://cdn-icons-png.flaticon.com/512/5903/5903939.png"
-          className="icon"
-          alt="cloudy"
-        />
-        <p>8°C</p>
-      </div>
-      <div className="day day3">
-        <h3>Fri</h3>
-        <img
-        src="https://cdn-icons-png.flaticon.com/512/5903/5903939.png"
-          className="icon"
-          alt="cloudy"
-        />
-        <p>9°C</p>
-      </div>
-      <div className="day day4">
-        <h3>Sat</h3>
-        <img
-        src="https://cdn-icons-png.flaticon.com/512/5903/5903939.png"
-          className="icon"
-          alt="cloudy"
-        />
-        <p>10°C</p>
-      </div>
-      <div className="day day5">
-        <h3>Sun</h3>
-        <img
-        src="https://cdn-icons-png.flaticon.com/512/5903/5903939.png"
-          className="icon"
-          alt="cloudy"
-        />
-        <p>11°C</p>
-      </div>
-      <div className="day day6">
-        <h3>Mon</h3>
-        <img
-        src="https://cdn-icons-png.flaticon.com/512/5903/5903939.png"
-          className="icon"
-          alt="cloudy"
-        />
-        <p>12°C</p>
+        <WeatherIcon icon="clear-sky-day" alt="clear sky" className="icon" />
+        <div className="temperatures">
+          <span className="forecast-temp-max">10° | </span>
+          <span className="forecast-temp-min">6°</span>
+        </div>
       </div>
     </div>
   );

@@ -9,7 +9,6 @@ function App() {
     <div className="App">
       <div className="app-container">
         <Weather defaultCity="Madrid"/>
-        <Forecast />
         <Footer />
       </div>
     </div>
