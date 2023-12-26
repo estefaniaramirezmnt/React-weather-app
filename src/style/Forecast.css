@@ -48,6 +48,10 @@
         font-size: 1rem;
     }
 
+    .forecast-days-container img {
+        width: 60px;
+    }
+
     .day-forecast p {
         font-size: 0.8rem;
     }
